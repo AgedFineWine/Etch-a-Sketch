@@ -12,7 +12,6 @@ body{
 
 .container{
     --length: 16;
-    min-height: auto;
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
