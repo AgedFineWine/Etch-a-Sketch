@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container{
+    min-height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.square-div{
+    flex: 1 1 6.25vw;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#reset{
+    padding: 5px 15px;
+    background-color: olive;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 15px;
+    font-weight: bold;
+}
