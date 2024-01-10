@@ -11,6 +11,7 @@ body{
 }
 
 .container{
+    --length: 16;
     min-height: auto;
     display: flex;
     flex-wrap: wrap;
@@ -18,7 +19,7 @@ body{
 }
 
 .square-div{
-    flex: 1 1 6.25vw;
+    flex: 1 1 calc(100% / var(--length));
 }
 
 .btn{
@@ -28,10 +29,16 @@ body{
 }
 
 #reset{
-    padding: 5px 15px;
-    background-color: olive;
+    padding: 5px 100%;
+    background-color: white;
     border-radius: 5px;
     border-style: none;
     font-size: 15px;
     font-weight: bold;
+}
+
+#reset:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    background-color: aquamarine;
 }
